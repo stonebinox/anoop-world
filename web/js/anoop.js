@@ -29,7 +29,7 @@ app.controller("home",function($scope,$http,$compile){
                 $("#maintext").fadeOut(2500);
                 setTimeout(function(){
                     $scope.displayText();
-                },500);
+                },3000);
             },2000);
         }
         else{
