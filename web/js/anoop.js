@@ -11,6 +11,9 @@ app.controller("home",function($scope,$http,$compile){
     $scope.messages=["Hi!","My name is Anoop Santhanam.","This is me showing the world who I am and what I've done so far in life.",{
         text: "This is where I did my education.",
         images: ["images/school.png","images/pu.png","images/ncb.png","images/christ.jpg"]
+    },{
+        text: "And this is a summary of my work experience!",
+        images: ["images/freelancer.jpg","images/binox.png"]
     }];
     $scope.position=null;
     $scope.displayText=function(){
