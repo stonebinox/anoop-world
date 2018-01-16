@@ -37,7 +37,7 @@ app.controller("home",function($scope,$http,$compile){
                 var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:300px;margin:0 auto;"></div>';
+                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:200px;margin:0 auto;"></div>';
                 }
                 list+='</div>';
                 $("#content").html(list);
