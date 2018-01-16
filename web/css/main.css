@@ -3,7 +3,7 @@
 	src:url(HelveticaNarrow.ttf);
 }
 body{
-    background-color:#111111;
+    background:#111111 url(../images/dark_wall.png);
     color:#efefef;
 }
 h1{
