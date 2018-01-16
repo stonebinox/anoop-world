@@ -14,7 +14,7 @@ app.controller("home",function($scope,$http,$compile){
         if($scope.position!=null){
             if($scope.position<$scope.messages.length){
                 var text=$scope.messages[$scope.position];
-                $("#maintext").html('<span class="blinking-cursor">|</span>');
+                $("#maintext").html('');
                 $scope.spellText(0);
             }
         }
@@ -23,6 +23,7 @@ app.controller("home",function($scope,$http,$compile){
         var text=$scope.messages[$scope.position];
         if(pos>=text.length){
             $scope.position+=1;
+            $("#maintext").append('<span class="blinking-cursor">|</span>');
             setTimeout(function(){
                 $scope.displayText();
             },3000);
