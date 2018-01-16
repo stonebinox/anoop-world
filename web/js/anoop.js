@@ -14,20 +14,16 @@ app.controller("home",function($scope,$http,$compile){
         if($scope.position!=null){
             var text=$scope.messages[$scope.position];
             $("#maintext").html('');
-            var done=$scope.spellText(0);
-            console.log(done);
-            if(done=="DONE"){
-                $scope.position+=1;
-                setTimeout(function(){
-                    $scope.displayText();
-                },5000);
-            }
+            $scope.spellText(0);
         }
     };
     $scope.spellText=function(pos){
         var text=$scope.messages[$scope.position];
         if(pos>=text.length){
-            return "DONE";
+            $scope.position+=1;
+            setTimeout(function(){
+                $scope.displayText();
+            },5000);
         }
         else{
             var letter=text[pos];
@@ -35,7 +31,7 @@ app.controller("home",function($scope,$http,$compile){
             $("#maintext").append(letter);
             pos+=1;
             setTimeout(function(){
-                return $scope.spellText(pos);
+                $scope.spellText(pos);
             },200);
         }
     };
