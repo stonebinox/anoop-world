@@ -11,8 +11,7 @@ app.controller("home",function($scope,$http,$compile){
     $scope.messages=["Hi!","My name is Anoop Santhanam."];
     $scope.position=null;
     $scope.displayText=function(){
-        console.log($scope.position);
-        if(validate($scope.position)){
+        if($scope.position!=null){
             var text=$scope.messages[$scope.position];
             $("#maintext").html('');
             var done=$scope.spellText(0);
