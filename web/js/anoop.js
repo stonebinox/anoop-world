@@ -15,7 +15,7 @@ app.controller("home",function($scope,$http,$compile){
             if($scope.position<$scope.messages.length){
                 var text=$scope.messages[$scope.position];
                 // $("#maintext").html('');
-                $("#maintext").fade();
+                $("#maintext").fadeOut();
                 $scope.spellText(0);
             }
         }
