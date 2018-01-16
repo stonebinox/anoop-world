@@ -9,7 +9,7 @@ body{
 h1{
     font-family: Narrow, Arial, Helvetica, sans-serif;
     letter-spacing:1px;
-    font-weight:bold;
+    /* font-weight:bold; */
     font-size:45px;
 }
 #footer{
