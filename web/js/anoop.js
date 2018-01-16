@@ -22,6 +22,7 @@ app.controller("home",function($scope,$http,$compile){
                 var text=$scope.messages[$scope.position];
                 $("#maintext").html('');
                 $("#click").css("display","block");
+                $("#context").html('');
                 $("#maintext").fadeIn();
                 $scope.spellText(0);
             }
