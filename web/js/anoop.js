@@ -11,6 +11,7 @@ app.controller("home",function($scope,$http,$compile){
     $scope.messages=["Hi!","My name is Anoop Santhanam."];
     $scope.position=null;
     $scope.displayText=function(){
+        console.log("here");
         if(validate($scope.position)){
             var text=$scope.messages[$scope.position];
             $("#maintext").html('');
