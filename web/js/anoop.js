@@ -25,10 +25,10 @@ app.controller("home",function($scope,$http,$compile){
         if(pos>=text.length){
             $scope.position+=1;
             $("#maintext").append('<span class="blinking-cursor">|</span>');
-            $("#maintext").fadeOut(2000);
+            $("#maintext").fadeOut(4000);
             setTimeout(function(){
                 $scope.displayText();
-            },3000);
+            },5000);
         }
         else{
             var letter=text[pos];
