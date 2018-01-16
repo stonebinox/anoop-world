@@ -15,6 +15,7 @@ app.controller("home",function($scope,$http,$compile){
             if($scope.position<$scope.messages.length){
                 var text=$scope.messages[$scope.position];
                 $("#maintext").html('');
+                $("#click").css("display","block");
                 $("#maintext").fadeIn();
                 $scope.spellText(0);
             }
@@ -25,12 +26,6 @@ app.controller("home",function($scope,$http,$compile){
         if(pos>=text.length){
             $scope.position+=1;
             $("#maintext").append('<span class="blinking-cursor">|</span>');
-            setTimeout(function(){
-                $("#maintext").fadeOut(2500);
-                setTimeout(function(){
-                    $scope.displayText();
-                },3000);
-            },2000);
         }
         else{
             var letter=text[pos];
@@ -40,5 +35,11 @@ app.controller("home",function($scope,$http,$compile){
                 $scope.spellText(pos);
             },100);
         }
+    };
+    $scope.nextMessage=function(){
+        $("#maintext").fadeOut(1500);
+        setTimeout(function(){
+            $scope.displayText();
+        },2000);
     };
 });
