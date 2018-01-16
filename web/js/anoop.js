@@ -34,11 +34,12 @@ app.controller("home",function($scope,$http,$compile){
         if(pos>=text.length){
             $scope.position+=1;
             if(validate(images)){
-                var list='';
+                var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<img src="'+image+'" class="img-responsive" style="width:300px;">';
+                    list+='<div class="col-sm-6"><img src="'+image+'" class="img-responsive" style="width:300px;"></div>';
                 }
+                list+='</div>';
                 $("#content").html(list);
             }
             $("#maintext").append('<span class="blinking-cursor">|</span>');
