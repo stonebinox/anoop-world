@@ -30,10 +30,17 @@ app.controller("home",function($scope,$http,$compile){
         if(typeof text=="object"){
             images=text.images;
             text=text.text;
-            console.log(images);
         }
         if(pos>=text.length){
             $scope.position+=1;
+            if(validate(images)){
+                var list='';
+                for(var i=0;i<images.length;i++){
+                    var image=images[i];
+                    list+='<img src="'+image+'" class="img-responsive" style="width:300px;">';
+                }
+                $("#content").html(list);
+            }
             $("#maintext").append('<span class="blinking-cursor">|</span>');
         }
         else{
