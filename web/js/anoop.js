@@ -8,13 +8,14 @@ Coincidence? I think not!
 ---------------------------------*/
 var app=angular.module("anoop",[]);
 app.controller("home",function($scope,$http,$compile){
-    $scope.messages=["Hi!","My name is Anoop Santhanam.","This is my world!"];
+    $scope.messages=["Hi!","My name is Anoop Santhanam.","This is me showing the world who I am and what I've done so far in life."];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
             if($scope.position<$scope.messages.length){
                 var text=$scope.messages[$scope.position];
-                $("#maintext").html('');
+                // $("#maintext").html('');
+                $("#maintext").fade();
                 $scope.spellText(0);
             }
         }
@@ -24,13 +25,13 @@ app.controller("home",function($scope,$http,$compile){
         if(pos>=text.length){
             $scope.position+=1;
             $("#maintext").append('<span class="blinking-cursor">|</span>');
+
             setTimeout(function(){
                 $scope.displayText();
             },3000);
         }
         else{
             var letter=text[pos];
-            console.log(letter);
             $("#maintext").append(letter);
             pos+=1;
             setTimeout(function(){
