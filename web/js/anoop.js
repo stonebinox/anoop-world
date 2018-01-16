@@ -54,7 +54,7 @@ app.controller("home",function($scope,$http,$compile){
             pos+=1;
             setTimeout(function(){
                 $scope.spellText(pos);
-            },50);
+            },75);
         }
     };
     $scope.nextMessage=function(){
