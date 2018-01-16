@@ -8,7 +8,7 @@ Coincidence? I think not!
 ---------------------------------*/
 var app=angular.module("anoop",[]);
 app.controller("home",function($scope,$http,$compile){
-    $scope.messages=["Hi!","My name is Anoop Santhanam."];
+    $scope.messages=["Hi!","My name is Anoop Santhanam.","This is my world!"];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
