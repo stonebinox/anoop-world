@@ -14,8 +14,10 @@ app.controller("home",function($scope,$http,$compile){
         if($scope.position!=null){
             if($scope.position<$scope.messages.length){
                 var text=$scope.messages[$scope.position];
-                // $("#maintext").html('');
-                $("#maintext").fadeOut();
+                $("#maintext").fadeOut(200);
+                setTimeout(function(){
+                    $("#maintext").html('');
+                },300);
                 $scope.spellText(0);
             }
         }
