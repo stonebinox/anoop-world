@@ -12,9 +12,11 @@ app.controller("home",function($scope,$http,$compile){
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
-            var text=$scope.messages[$scope.position];
-            $("#maintext").html('');
-            $scope.spellText(0);
+            if($scope.position<$scope.messages.length){
+                var text=$scope.messages[$scope.position];
+                $("#maintext").html('');
+                $scope.spellText(0);
+            }
         }
     };
     $scope.spellText=function(pos){
@@ -23,7 +25,7 @@ app.controller("home",function($scope,$http,$compile){
             $scope.position+=1;
             setTimeout(function(){
                 $scope.displayText();
-            },5000);
+            },3000);
         }
         else{
             var letter=text[pos];
@@ -32,7 +34,7 @@ app.controller("home",function($scope,$http,$compile){
             pos+=1;
             setTimeout(function(){
                 $scope.spellText(pos);
-            },200);
+            },100);
         }
     };
 });
