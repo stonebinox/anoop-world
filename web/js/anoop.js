@@ -34,7 +34,7 @@ app.controller("home",function($scope,$http,$compile){
             pos+=1;
             setTimeout(function(){
                 return $scope.spellText(pos);
-            },200);
+            },500);
         }
     };
 });
