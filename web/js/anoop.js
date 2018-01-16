@@ -8,7 +8,10 @@ Coincidence? I think not!
 ---------------------------------*/
 var app=angular.module("anoop",[]);
 app.controller("home",function($scope,$http,$compile){
-    $scope.messages=["Hi!","My name is Anoop Santhanam.","This is me showing the world who I am and what I've done so far in life."];
+    $scope.messages=["Hi!","My name is Anoop Santhanam.","This is me showing the world who I am and what I've done so far in life.",{
+        text: "This is where I did my education.",
+        images: ["images/school.png","images/pu.png","images/ncb.png","images/christ.jpg"]
+    }];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
@@ -23,6 +26,12 @@ app.controller("home",function($scope,$http,$compile){
     };
     $scope.spellText=function(pos){
         var text=$scope.messages[$scope.position];
+        var images=null;
+        if(typeof text=="object"){
+            images=text.images;
+            text=text.text;
+            console.log(images);
+        }
         if(pos>=text.length){
             $scope.position+=1;
             $("#maintext").append('<span class="blinking-cursor">|</span>');
