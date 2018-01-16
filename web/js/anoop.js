@@ -13,7 +13,7 @@ app.controller("home",function($scope,$http,$compile){
         images: ["images/school.png","images/pu.png","images/ncb.png","images/christ.jpg"]
     },{
         text: "And this is a summary of my work experience!",
-        images: ["images/freelancer.jpg","images/binox.png"]
+        images: ["images/freelancer.jpg","images/binox.png","images/spectral_logo.png","images/dust-logo.png"]
     }];
     $scope.position=null;
     $scope.displayText=function(){
