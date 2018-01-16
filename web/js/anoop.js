@@ -30,6 +30,7 @@ app.controller("home",function($scope,$http,$compile){
         }
         else{
             var letter=text[pos];
+            console.log(letter);
             $("#maintext").append(letter);
             pos+=1;
             setTimeout(function(){
