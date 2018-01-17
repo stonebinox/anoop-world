@@ -25,7 +25,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "Binox Blogs",
         description: "Developed and designed a free blogging platform for the Binox IntOS. Technology used was MySQL, PHP, AJAX, Javascript, and HTML.",
-        url: "https://69.28.95.218/blog/8"
+        url: "https://69.28.95.218/blox?id=8"
     },{
         text: "Endurance 2015",
         description: "On January 17th, 2015, I organized India's first startup press conference in Koramangala, Bangalore, at TechHub. As part of Binox, we invited startups to register for a week and had 30+ startups sign up for an opportunity to talk to India's leading journalists for 30 minutes (per startup). We shortlisted 5 startups and they were given an opportunity to present along with us. I organized and funded the entire event, built the event website for the same, and helped invite journalists to the event. Technology used was PHP, MySQL, AJAX, Javascript, HTML, and Adobe Photoshop (for invites).",
@@ -33,7 +33,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "Binox intOS",
         description: "Developing an internet Operating system required us to understand the structure of the internet and how it can be improved. Binox intOS organizes the internet, enabling users of the internet to customize their experience, use it effectively, and multitask on the internet with ease. intOS also aims at bridging the gap between the real and virtual world. This was an invention and I have filed a patent for the same in India and US. The intOS is designed primarily around a social network structure with support for users to search and find people they know. Furthermore, the OS had apps that allows users to share pictures, songs, videos, and use all of the other external apps of the internet on one platform. The OS's popular apps are Pictures, Music, Videos, Binox Blogs, Internet Search, BStore, and SkyBox to name a few. Technology stack involved MySQL, PHP, and CentOS as base architecture.",
-        url: "https://69.28.95.218/endurance"
+        url: "https://69.28.95.218/"
     }];
     $scope.position=null;
     $scope.displayText=function(){
