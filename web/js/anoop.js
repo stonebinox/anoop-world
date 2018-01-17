@@ -86,6 +86,14 @@ app.controller("home",function($scope,$http,$compile){
         text: "Renco",
         description: "A webapp for a Denmark based client who wanted a booking form for customers to book home cleaners. Complete with payment module, billing, and booking form, it was exclusive to Denmark. I built this using AngularJS, jQuery, Bootstrap, Silex, AJAX, Stripe API, MySQL, and Heroku.",
         url: "https://dusthq-renco.herokuapp.com/"
+    },{
+        text: "Drag N Check",
+        description: "A webapp built for an Arabian marketing client who wanted a utility for marketing heads and creative heads to specify marketing creatives and share data. The utility not only helps marketers specify the details of what creatives need to be uploaded, but their dimensions, file size, file type, etc. The upload utility also checks the same. I built this using AngularJS, jQuery, Bootstrap, Amazon S3, Silex, Google login, MySQL, AJAX, and Heroku.",
+        url: "https://dusthq-dragncheck.herokuapp.com/login"
+    },{
+        text: "Senca",
+        description: "A research webapp for UK based client that displays content as suggestions to people who are composing a research article as they type. It hosts a dashboard for admins to specify data sources to provide it with resources to know where to suggest content from. I built this using AngularJS, ContentTools editor, Bootstrap, Web scraping, Silex, MySQL, and Heroku.",
+        url: "https://dusthq-senca.herokuapp.com/"
     }];
     $scope.position=null;
     $scope.displayText=function(){
