@@ -81,7 +81,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "Full Candidate",
         description: "A webapp that I worked on at Dust for a Swiss client who wanted a platform for job recruiters to post their requirements and have candidates submit video resumes instead of traditional text based resumes. The candidate is expected to introduce themselves and show off their skills on video and submit it as part of the submission process. Built the entire app using AngularJS, jQuery, Bootstrap, Silex, AJAX, Youtube, MySQL, Sendgrid, and Heroku.",
-        url: "https://dusthq-full-candidate.herokuapp.com/"
+        url: "https://dusthq-full-candidate.herokuapp.com/home"
     },{
         text: "Renco",
         description: "A webapp for a Denmark based client who wanted a booking form for customers to book home cleaners. Complete with payment module, billing, and booking form, it was exclusive to Denmark. I built this using AngularJS, jQuery, Bootstrap, Silex, AJAX, Stripe API, MySQL, and Heroku.",
