@@ -14,7 +14,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "And this is a summary of my work experience!",
         images: ["images/freelancer.jpg","images/binox.png","images/spectral_logo.png","images/dust-logo.png"]
-    }];
+    },"Now, the fun part ...","Let's go through every single project I've built from the start of time, shall we?","Yeah, you don't really have a choice."];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
