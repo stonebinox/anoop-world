@@ -81,7 +81,7 @@ app.controller("home",function($scope,$http,$compile){
                 $("#content").append(list);
             }
             if(validate(url)){
-                $("#content").append('<hr><iframe src="'+url+'" name="iframe" id="iframe" frameborder=0 style="width:100%;height:500px;"></iframe>');
+                $("#content").append('<hr><iframe src="'+url+'" name="iframe" id="iframe" frameborder=0 style="width:100%;height:700px;"></iframe>');
             }
             $("#maintext").append('<span class="blinking-cursor">|</span>');
         }
