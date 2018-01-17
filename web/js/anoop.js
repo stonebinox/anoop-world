@@ -34,6 +34,18 @@ app.controller("home",function($scope,$http,$compile){
         text: "Binox intOS",
         description: "Developing an internet Operating system required us to understand the structure of the internet and how it can be improved. Binox intOS organizes the internet, enabling users of the internet to customize their experience, use it effectively, and multitask on the internet with ease. intOS also aims at bridging the gap between the real and virtual world. This was an invention and I have filed a patent for the same in India and US. The intOS is designed primarily around a social network structure with support for users to search and find people they know. Furthermore, the OS had apps that allows users to share pictures, songs, videos, and use all of the other external apps of the internet on one platform. The OS's popular apps are Pictures, Music, Videos, Binox Blogs, Internet Search, BStore, and SkyBox to name a few. Technology stack involved MySQL, PHP, and CentOS as base architecture.",
         url: "https://69.28.95.218/"
+    },{
+        text: "SkyBox",
+        description: "Skybox is a cloud file storage and sharing platform. I had to design, code, and decide key factors of SkyBox. Deciding what goes where and what doesn't and what needs to be included is a huge part of what I do for SkyBox. Conceived the idea, developed end-to-end by me using MySQL, PHP, AJAX, JavaScript, CSS, and HTML.",
+        url: "https://69.28.95.218/skybox"
+    },{
+        text: "Planet Binox",
+        description: "Started a formal online media channel to air video and article content from the Binox team. Developed end to end by me using MySQL, PHP, JavaScript, CSS, HTML, and AJAX.",
+        url: "https://69.28.95.218/planetbx"
+    },{
+        text: "Eye",
+        description: "Eye is a navigation app that allows you to track your friends and family real-time on a map. It consists of several options to protect one's privacy. Since it contains a social network of its own, nobody can track a person without their consent and without being notified. Currently live in the store for Windows Phone. Developed end to end by me using PHP, MySQL, Visual C#, and XAML.",
+        url: "https://www.microsoft.com/en-us/store/p/eye-by-binox/9nblggh5vqvr"
     }];
     $scope.position=null;
     $scope.displayText=function(){
