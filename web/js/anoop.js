@@ -17,7 +17,7 @@ app.controller("home",function($scope,$http,$compile){
     },"Now, the fun part ...","Let's go through every single project I've built from the start of time, shall we?","Yeah, you don't really have a choice. I'll make sure it's fun though!",{
         text: "Binox Web Services",
         description: "To facilitate development of projects outsourced to us, we launched Binox Web Services to not only design and develop solutions, but to maintain web servers, design graphics content, and host the web content onto the internet. While I did all of the coding, I occasionally also designed logos and icons using Adobe Photoshop.",
-        url: "https://binox.me/binoxservice"
+        url: "https://69.28.95.218/binoxservice"
     }];
     $scope.position=null;
     $scope.displayText=function(){
@@ -62,7 +62,7 @@ app.controller("home",function($scope,$http,$compile){
                 $("#content").append(list);
             }
             if(validate(url)){
-                $("#content").append('<iframe src="'+url+'" name="iframe" id="iframe" frameborder=0 style="width:100%;height:400px;"></iframe>');
+                $("#content").append('<hr><iframe src="'+url+'" name="iframe" id="iframe" frameborder=0 style="width:100%;height:400px;"></iframe>');
             }
             $("#maintext").append('<span class="blinking-cursor">|</span>');
         }
