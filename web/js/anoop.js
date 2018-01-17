@@ -37,7 +37,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "SkyBox",
         description: "Skybox is a cloud file storage and sharing platform. I had to design, code, and decide key factors of SkyBox. Deciding what goes where and what doesn't and what needs to be included is a huge part of what I do for SkyBox. Conceived the idea, developed end-to-end by me using MySQL, PHP, AJAX, JavaScript, CSS, and HTML.",
-        url: "https://69.28.95.218/skybox"
+        url: "https://69.28.95.218/skybox.php"
     },{
         text: "Planet Binox",
         description: "Started a formal online media channel to air video and article content from the Binox team. Developed end to end by me using MySQL, PHP, JavaScript, CSS, HTML, and AJAX.",
@@ -46,6 +46,22 @@ app.controller("home",function($scope,$http,$compile){
         text: "Eye",
         description: "Eye is a navigation app that allows you to track your friends and family real-time on a map. It consists of several options to protect one's privacy. Since it contains a social network of its own, nobody can track a person without their consent and without being notified. Currently live in the store for Windows Phone. Developed end to end by me using PHP, MySQL, Visual C#, and XAML.",
         url: "https://www.microsoft.com/en-us/store/p/eye-by-binox/9nblggh5vqvr"
+    },{
+        text: "Daredeliver",
+        description: "A 24x7 peer to peer same-day delivery service in Bangalore. Conceived the idea, developed it, marketed, and launched by me. Used Cordova Phonegap, PHP, and MySQL.",
+        url: "https://play.google.com/store/apps/details?id=me.binox.daredeliver"
+    },{
+        text: "SPIN Vista Cloud",
+        description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, JS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
+        images:[]
+    },{
+        text: "Spectral Dashboard",
+        description: "Built a cloud-based user and product management dashboard for the entire company to keep track of users, products, and licences. Admins can handle tickets, manage user accounts, generate licence keys, and generate reports of activity happening on any product in the company. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, and HTML.",
+        image:[]
+    },{
+        text: "HemoCalc (previously Haemocalc)",
+        description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
+        images:[]
     }];
     $scope.position=null;
     $scope.displayText=function(){
