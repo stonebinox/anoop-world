@@ -18,6 +18,10 @@ app.controller("home",function($scope,$http,$compile){
         text: "Binox Web Services",
         description: "To facilitate development of projects outsourced to us, we launched Binox Web Services to not only design and develop solutions, but to maintain web servers, design graphics content, and host the web content onto the internet. While I did all of the coding, I occasionally also designed logos and icons using Adobe Photoshop.</p><p>This project was my very first and is broken at several points. I've retained it so you can see where I began and how far I've come.",
         url: "https://69.28.95.218/binoxservice"
+    },{
+        text: "Binox Internet Search",
+        description: "Developed an unreleased internet search engine to potentially compete with existing popular search engines. I designed an architecture and method to search the entire internet without having the user enter a search query. This was partially achieved my categorizing and cataloging the entire internet. <span class='text-danger'>Warning:</span> It has plenty of bugs.",
+        url: "https://69.28.95.218/isearch"
     }];
     $scope.position=null;
     $scope.displayText=function(){
@@ -51,6 +55,9 @@ app.controller("home",function($scope,$http,$compile){
             $scope.position+=1;
             if(validate(desc)){
                 $("#content").html('<p>'+desc+'</p>');
+                if(validate(url)){
+                    $("#content").append('<a href="'+url+'" target="_blank">Check it in a new tab</a>');
+                }
             }
             if(validate(images)){
                 var list='<div class="row">';
