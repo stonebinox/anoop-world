@@ -42,7 +42,7 @@ app.controller("home",function($scope,$http,$compile){
             if(validate(text.description)){
                 desc=text.description;
             }
-            if(validaye(text.url)){
+            if(validate(text.url)){
                 url=text.url;
             }
             text=text.text;
@@ -76,9 +76,9 @@ app.controller("home",function($scope,$http,$compile){
         }
     };
     $scope.nextMessage=function(){
-        $("#maintext").fadeOut(1500);
+        $("#maintext").fadeOut(800);
         setTimeout(function(){
             $scope.displayText();
-        },2000);
+        },1500);
     };
 });
