@@ -1,9 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
 <body ng-app="anoop" ng-controller="home">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#">Anoop Santhanam</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Introduction</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experience</a></li> 
+                <li><a href="#">Projects</a></li> 
+                <li><a href="#">Patent</a></li> 
+                <li><a href="#">In the media</a></li>
+                <li><a href="#">Contact me</a></li> 
+            </ul>
+            {# <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul> #}
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <br><br>
-        <h6 class="text-left" id="click" style="cursor:pointer;display:none;" ng-click="nextMessage()">Tap to continue</h6>
+        <h6 class="text-left" id="click" style="cursor:pointer;display:none;" ng-click="nextMessage()">Tap here to continue</h6>
         <h1 class="text-left" id="maintext"></h1>
         <br>
         <div id="content"></div>
