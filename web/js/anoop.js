@@ -101,7 +101,7 @@ app.controller("home",function($scope,$http,$compile){
             if($scope.position<$scope.messages.length){
                 switch($scope.position){
                     case 3:
-                    $(".nav .navbar-nav").find("li").removeClass("active");
+                    $("ul.nav").find("li").removeClass("active");
                     $("#education").parent().addClass("active");
                     break; 
                 }
