@@ -99,6 +99,12 @@ app.controller("home",function($scope,$http,$compile){
     $scope.displayText=function(){
         if($scope.position!=null){
             if($scope.position<$scope.messages.length){
+                switch($scope.position){
+                    case 3:
+                    $(".nav .navbar-nav").find("li").removeClass("active");
+                    $("#education").parent().addClass("active");
+                    break; 
+                }
                 var text=$scope.messages[$scope.position];
                 $("#maintext").html('');
                 $("#click").css("display","block");
