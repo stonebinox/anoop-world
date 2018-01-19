@@ -104,6 +104,10 @@ app.controller("home",function($scope,$http,$compile){
                     $("ul.nav").find("li").removeClass("active");
                     $("#education").parent().addClass("active");
                     break; 
+                    case 4:
+                    $("ul.nav").find("li").removeClass("active");
+                    $("#experience").parent().addClass("active");
+                    break;
                 }
                 var text=$scope.messages[$scope.position];
                 $("#maintext").html('');
