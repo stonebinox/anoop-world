@@ -114,6 +114,7 @@ app.controller("home",function($scope,$http,$compile){
                 $("#click").css("display","block");
                 $("#content").html('');
                 $("#maintext").fadeIn();
+                $("#click").css("display","none");
                 $scope.spellText(0);
             }
         }
@@ -134,6 +135,7 @@ app.controller("home",function($scope,$http,$compile){
             text=text.text;
         }
         if(pos>=text.length){
+            $("#click").css("display","block");
             $scope.position+=1;
             if(validate(desc)){
                 $("#content").html('<p>'+desc+'</p>');
