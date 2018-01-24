@@ -111,10 +111,10 @@ app.controller("home",function($scope,$http,$compile){
                 }
                 var text=$scope.messages[$scope.position];
                 $("#maintext").html('');
-                $("#click").css("display","block");
+                $("#click").css("opacity","1.0");
                 $("#content").html('');
                 $("#maintext").fadeIn();
-                $("#click").css("display","none");
+                $("#click").css("opacity","0.0");
                 $scope.spellText(0);
             }
         }
@@ -135,7 +135,7 @@ app.controller("home",function($scope,$http,$compile){
             text=text.text;
         }
         if(pos>=text.length){
-            $("#click").css("display","block");
+            $("#click").css("opacity","1.0");
             $scope.position+=1;
             if(validate(desc)){
                 $("#content").html('<p>'+desc+'</p>');

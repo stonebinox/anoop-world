@@ -12,6 +12,11 @@ h1{
     /* font-weight:bold; */
     font-size:45px;
 }
+#click{
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  transition:all 0.2s ease;
+}
 .blinking-cursor {
     font-weight: 100;
     /* font-size: 30px; */
