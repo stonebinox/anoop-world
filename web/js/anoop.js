@@ -148,7 +148,7 @@ app.controller("home",function($scope,$http,$compile){
                 var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-responsive" style="width:100%;margin-top:20px;"></div>';
+                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:100%;margin-top:20px;"></div>';
                 }
                 list+='</div>';
                 $("#content").append(list);
