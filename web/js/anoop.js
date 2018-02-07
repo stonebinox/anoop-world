@@ -17,7 +17,8 @@ app.controller("home",function($scope,$http,$compile){
     },"Now, for the fun part ...","Let's go through every single project I've built from the start of time, shall we?","Yeah, you don't really have a choice. I'll make sure it's fun though!",{
         text: "Binox Web Services",
         description: "To facilitate development of projects outsourced to us, we launched Binox Web Services to not only design and develop solutions, but to maintain web servers, design graphics content, and host the web content onto the internet. While I did all of the coding, I occasionally also designed logos and icons using Adobe Photoshop.</p><p>This project was my very first and is broken at several points. I've retained it so you can see where I began and how far I've come.",
-        url: "https://69.28.95.218/binoxservice"
+        // url: "https://69.28.95.218/binoxservice"
+        images:["images/screenshot/binoxservice.png"]
     },{
         text: "Binox Internet Search",
         description: "Developed an unreleased internet search engine to potentially compete with existing popular search engines. I designed an architecture and method to search the entire internet without having the user enter a search query. This was partially achieved my categorizing and cataloging the entire internet. <span class='text-danger'>Warning:</span> It has plenty of bugs.",
@@ -147,7 +148,7 @@ app.controller("home",function($scope,$http,$compile){
                 var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:200px;margin-top:20px;"></div>';
+                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-responsive" style="width:100%;margin-top:20px;"></div>';
                 }
                 list+='</div>';
                 $("#content").append(list);
