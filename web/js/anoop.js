@@ -57,7 +57,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "Spectral Dashboard",
         description: "Built a cloud-based user and product management dashboard for the entire company to keep track of users, products, and licences. Admins can handle tickets, manage user accounts, generate licence keys, and generate reports of activity happening on any product in the company. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, and HTML.",
-        image:["images/screenshots/dashboard.jpg"]
+        images:["images/screenshots/dashboard.jpg"]
     },{
         text: "HemoCalc (previously Haemocalc)",
         description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
