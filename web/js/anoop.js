@@ -53,7 +53,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "SPIN Vista Cloud",
         description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, JS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
-        images:[]
+        images:["images/screenshots/vista.png"]
     },{
         text: "Spectral Dashboard",
         description: "Built a cloud-based user and product management dashboard for the entire company to keep track of users, products, and licences. Admins can handle tickets, manage user accounts, generate licence keys, and generate reports of activity happening on any product in the company. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, and HTML.",
