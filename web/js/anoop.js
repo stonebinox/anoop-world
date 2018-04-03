@@ -99,6 +99,34 @@ app.controller("home",function($scope,$http,$compile){
         description: "A research webapp for UK based client that displays content as suggestions to people who are composing a research article as they type. It hosts a dashboard for admins to specify data sources to provide it with resources to know where to suggest content from. I built this using AngularJS, ContentTools editor, Bootstrap, Web scraping, Silex, MySQL, and Heroku.",
         url: "https://dusthq-senca.herokuapp.com/",
         images: ["images/screenshots/senca1.jpg"]
+    },{
+        text: "Denevents",
+        description: "A webapp for a Denmark based client who wanted an exclusive events portal like Eventbrite for Denmark. I built this using AngularJS, Bootstrap, Lister template, Silex, AJAX, MySQL, Google maps, and Heroku.",
+        url: "https://dusthq-denevents.herokuapp.com",
+        images: []
+    },{
+        text: "Sales Intelligence",
+        description: "An analytics webapp built for a client from France. It analyses your emails from Gmail and tells you who you had the best communicative leads with. Meant to be an aiding tool for lead generators, this points out who has responded back to those cold calling emails for a marketer to identify a potential customer. Built using AngularJS, Bootstrap, Gmail API, Gmail Oauth, Silex, AJAX, MySQL, and Heroku.",
+        url: "https://dusthq-sales-intelligence.herokuapp.com",
+        images: []
+    },{
+        text: "Dustbot",
+        description: "Dustbot is a bot that can be taught how to answer questions. Dustbot can be taught to communicate with users in a certain fashion, ask questions, process answers, and handle responses. Built as a generic bot with no purpose, Dustbot can be used for anything ranging from support bot to controlling lights and electronic modules. It does this by handling APIs and their responses. I built this using AngularJS, Bootstrap, Silex, CSS3, MySQL, Sendgrid, and Heroku. For a demo, try the landing page bot that asks you a few questions and creates an entire home page for your idea.",
+        url: "https://dustbot.herokuapp.com/bot/1",
+        images: []
+    },{
+        text: "DaDaFund",
+        description: "Built an API that accepts a transaction value, rounds it to the next round figure, calculates the difference and donates the difference to charity. This API can be monitored and plugged into any payment gateway. Users have the option of choosing which charities to send money to and charities are provided with a dashboard to see incoming funds. Built this using ClearDB MySQL, Heroku, Silex, AngularJS, Bootstrap, Sendgrid, Stripe, and AWS S3.",
+        url: "https://dusthq-dadafund.herokuapp.com/home",
+        images: []
+    },{
+        text: "FAB! Apparels Billing",
+        description: "A small billing module built for a clothes store in the city. Complete with inventory management, bill generation, and report generation, this was a private project. I built this using AngularJS, Bootstrap, AJAX, Silex, MySQL, Sendgrid, Adobe Photoshop, and Heroku.",
+        images: ["images/screenshots/fab_logo.JPG"]
+    },{
+        text: "Dust Architecture",
+        description: "I developed Dust's entire web platform. The previous version had few issues and we decided to revamp everything. From data migration from MongoDB to MySQL and RoR to PHP Silex to developing the database and the entire UI with its API calls, I built it. Also integrated Sendgrid's emailing API for Dust Broadcast lists along with Stripe's payment API. I built this using Heroku, ClearDB MySQL, Sendgrid, Stripe, Silex, AngularJS, Bootstrap, and AWS S3 for file storage.",
+        images: ["images/screenshots/dust1.png","images/screenshots/dust2.png"]
     }];
     $scope.position=null;
     $scope.displayText=function(){
