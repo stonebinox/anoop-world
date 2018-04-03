@@ -52,15 +52,15 @@ app.controller("home",function($scope,$http,$compile){
         url: "https://play.google.com/store/apps/details?id=me.binox.daredeliver"
     },{
         text: "SPIN Vista Cloud",
-        description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, JS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
+        description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, AngularJS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
         images:["images/screenshots/vista.png"]
     },{
         text: "Spectral Dashboard",
-        description: "Built a cloud-based user and product management dashboard for the entire company to keep track of users, products, and licences. Admins can handle tickets, manage user accounts, generate licence keys, and generate reports of activity happening on any product in the company. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, and HTML.",
+        description: "Built a cloud-based user and product management dashboard for the entire company to keep track of users, products, licences, and patient files. Admins can handle tickets, manage user accounts, generate licence keys, and generate reports of activity happening on any product in the company. Languages used: PHP, MySQL, AJAX, CSS (Bootstrap), jQuery, AngularJS, and HTML.",
         images:["images/screenshots/dashboard.jpg"]
     },{
         text: "HemoCalc (previously Haemocalc)",
-        description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
+        description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, AngularJS, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
         images:["images/screenshots/hemocalc.jpg","images/screenshots/hemocalc2.jpg","images/screenshots/hemocalc3.jpg"]
     },{
         text: "Spectral Insights Website",
@@ -69,7 +69,7 @@ app.controller("home",function($scope,$http,$compile){
         images: ["images/screenshots/spectral1.jpg","images/screenshots/spectral2.jpg"]
     },{
         text: "Chalk",
-        description: "A ground-truth marking training tool for pathologists and doctors alike, Chalk lets instructors/reviewers set up tests with images of pap smears, blood smears, and even tissue biposies and have them annotated. This data can then be used as a live testing tool for doctors to see if they can identify the marked regions correctly. The entire portal and website was developed using MySQL, PHP, AJAX, CSS, HTML, jQuery, OpenSeadragon, paperJS, chartJS, and Adobe Photoshop.",
+        description: "A ground-truth marking training tool for pathologists and doctors alike, Chalk lets instructors/reviewers set up tests with images of pap smears, blood smears, and even tissue biposies and have them annotated. This data can then be used as a live testing tool for doctors to see if they can identify the marked regions correctly. The entire portal and website was developed using MySQL, PHP, AJAX, CSS, HTML, jQuery, OpenSeadragon, paperJS, chartJS, AngularJS, and Adobe Photoshop.",
         images:["images/screenshots/chalk.jpg"]
     },{
         text: "HistoCalc",
