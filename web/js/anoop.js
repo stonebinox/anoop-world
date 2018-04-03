@@ -182,10 +182,11 @@ app.controller("home",function($scope,$http,$compile){
                 var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:100%;margin-top:20px;"></div>';
+                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:100%;margin-top:20px;cursor:pointer;" ng-click="previewImage(\''+image+'\')"></div>';
                 }
                 list+='</div>';
                 $("#content").append(list);
+                $compile("#content")($scope);
             }
             if(validate(url)){
                 $("#content").append('<hr><iframe src="'+url+'" name="iframe" id="iframe" frameborder=0 style="width:100%;height:700px;"></iframe>');
@@ -206,5 +207,9 @@ app.controller("home",function($scope,$http,$compile){
         setTimeout(function(){
             $scope.displayText();
         },1500);
+    };
+    $scope.previewImage=function(url){
+        var text='<img src="'+url+'" class="img-responsive" width="100%">';
+        messageBox("Preview",text);
     };
 });
