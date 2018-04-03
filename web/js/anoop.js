@@ -182,10 +182,13 @@ app.controller("home",function($scope,$http,$compile){
                 var list='<div class="row">';
                 for(var i=0;i<images.length;i++){
                     var image=images[i];
-                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:100%;margin-top:20px;cursor:pointer;" ng-click="previewImage(\''+image+'\')"></div>';
+                    list+='<div class="col-sm-6 text-center"><img src="'+image+'" class="img-thumbnail" style="width:100%;margin-top:20px;cursor:pointer;" ng-click="previewImage(\''+image+'\')" data-toggle="tooltip" title="Preview this image" data-placement="auto"></div>';
                 }
                 list+='</div>';
                 $("#content").append(list);
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover"
+                });
                 $compile("#content")($scope);
             }
             if(validate(url)){
