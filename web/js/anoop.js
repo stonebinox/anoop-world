@@ -45,11 +45,23 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "Eye",
         description: "Eye is a navigation app that allows you to track your friends and family real-time on a map. It consists of several options to protect one's privacy. Since it contains a social network of its own, nobody can track a person without their consent and without being notified. Currently live in the store for Windows Phone. Developed end to end by me using PHP, MySQL, Visual C#, and XAML.",
-        url: "https://www.microsoft.com/en-us/store/p/eye-by-binox/9nblggh5vqvr"
+        url: "https://www.microsoft.com/en-us/store/p/eye-by-binox/9nblggh5vqvr",
+        images: ["images/screenshots/eye1.png","images/screenshots/eye2.png","images/screenshots/eye3.png"]
     },{
         text: "Daredeliver",
         description: "A 24x7 peer to peer same-day delivery service in Bangalore. Conceived the idea, developed it, marketed, and launched by me. Used Cordova Phonegap, PHP, and MySQL.",
-        url: "https://play.google.com/store/apps/details?id=me.binox.daredeliver"
+        url: "https://play.google.com/store/apps/details?id=me.binox.daredeliver",
+        images: ["images/screenshots/dd1.png","images/screenshots/dd2.png","images/screenshots/dd3.png"]
+    },{
+        text: "Ecolekt",
+        description: "An Android app that I developed for a client for ewaste collection. This app was built using MySQL, PHP (Silex), AJAX, Java, Cordova Phonegap, CSS, Javascript, and HTML.",
+        url: "https://play.google.com/store/apps/details?id=me.binox.android.ecolekt",
+        images: ["images/screenshots/ec1.png","images/screenshots/ec2.png","images/screenshots/ec3.png","images/screenshots/ec4.png"]
+    },{
+        text: "Pramod Kathavi",
+        description: "A website for a client who's a Supreme Court lawyer. He needed a management portal as well to handle clients and their case files. This was built using PHP, MySQL, AJAX, CSS, JS, Adobe Photoshop, and HTML.",
+        url: "http://www.pramodkathavi.com/",
+        images: ["images/screenshots/pk1.png","images/screenshots/pk2.png"]
     },{
         text: "SPIN Vista Cloud",
         description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, AngularJS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
@@ -111,7 +123,7 @@ app.controller("home",function($scope,$http,$compile){
         text: "Dustbot",
         description: "Dustbot is a bot that can be taught how to answer questions. Dustbot can be taught to communicate with users in a certain fashion, ask questions, process answers, and handle responses. Built as a generic bot with no purpose, Dustbot can be used for anything ranging from support bot to controlling lights and electronic modules. It does this by handling APIs and their responses. I built this using AngularJS, Bootstrap, Silex, CSS3, MySQL, Sendgrid, and Heroku. For a demo, try the landing page bot that asks you a few questions and creates an entire home page for your idea.",
         url: "https://dustbot.herokuapp.com/bot/1",
-        images: ["images/screenshots/dusbot1.jpg","images/screenshots/dustbot2.jpg"]
+        images: ["images/screenshots/dustbot1.jpg","images/screenshots/dustbot2.jpg"]
     },{
         text: "DaDaFund",
         description: "Built an API that accepts a transaction value, rounds it to the next round figure, calculates the difference and donates the difference to charity. This API can be monitored and plugged into any payment gateway. Users have the option of choosing which charities to send money to and charities are provided with a dashboard to see incoming funds. Built this using ClearDB MySQL, Heroku, Silex, AngularJS, Bootstrap, Sendgrid, Stripe, and AWS S3.",
@@ -125,7 +137,7 @@ app.controller("home",function($scope,$http,$compile){
         text: "Dust Architecture",
         description: "I developed Dust's entire web platform. The previous version had few issues and we decided to revamp everything. From data migration from MongoDB to MySQL and RoR to PHP Silex to developing the database and the entire UI with its API calls, I built it. Also integrated Sendgrid's emailing API for Dust Broadcast lists along with Stripe's payment API. I built this using Heroku, ClearDB MySQL, Sendgrid, Stripe, Silex, AngularJS, Bootstrap, and AWS S3 for file storage.",
         images: ["images/screenshots/dust1.png","images/screenshots/dust2.png"]
-    }];
+    },"And data scraping ... a <i>lot</i> of it!"];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
