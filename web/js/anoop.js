@@ -61,7 +61,7 @@ app.controller("home",function($scope,$http,$compile){
         text: "Pramod Kathavi",
         description: "A website for a client who's a Supreme Court lawyer. He needed a management portal as well to handle clients and their case files. This was built using PHP, MySQL, AJAX, CSS, JS, Adobe Photoshop, and HTML.",
         url: "http://www.pramodkathavi.com/",
-        images: ["images/screenshots/pk1.png","images/screenshots/pk2.png"]
+        images: ["images/screenshots/pk1.jpg","images/screenshots/pk2.jpg"]
     },{
         text: "SPIN Vista Cloud",
         description: "A cloud product for Spectral Insights for viewing deep zoom images for various datasets (mostly medical) was built by me. Included tools to pan, zoom, annotate, crop, manage workspaces, upload large files with an image stitching pipeline, and ability to share workspaces with other participants. Used MySQL, PHP, jQuery, AngularJS, CSS, and HTML for base tech architecture. Used OpenSeadragon, paperjs, and THREE.js for deep image zoom functionality.",
