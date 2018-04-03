@@ -61,19 +61,20 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "HemoCalc (previously Haemocalc)",
         description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
-        images:["images/hemocalc.jpg","images/hemocalc2.jpg","images/hemocalc3.jpg"]
+        images:["images/screenshots/hemocalc.jpg","images/screenshots/hemocalc2.jpg","images/screenshots/hemocalc3.jpg"]
     },{
         text: "Spectral Insights Website",
         description: "Developed, designed, and hosted the company website. The entire website is internally sourced through Spectral Dashboard where the team has access to the website's contents and can change images, textual data, etc. from the dashboard. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, and Adobe Photoshop.",
-        url: "http://www.spectralinsights.com/"
+        url: "http://www.spectralinsights.com/",
+        images: ["images/screenshots/spectral1.jpg","images/screenshots/spectral2.jpg"]
     },{
         text: "Chalk",
         description: "A ground-truth marking training tool for pathologists and doctors alike, Chalk lets instructors/reviewers set up tests with images of pap smears, blood smears, and even tissue biposies and have them annotated. This data can then be used as a live testing tool for doctors to see if they can identify the marked regions correctly. The entire portal and website was developed using MySQL, PHP, AJAX, CSS, HTML, jQuery, OpenSeadragon, paperJS, chartJS, and Adobe Photoshop.",
-        images:[]
+        images:["images/screenshots/chalk.jpg"]
     },{
         text: "HistoCalc",
         description: "An analysis tool that helps pathologists and doctors to run algorithms of various kinds to analyse tissue biopsy images and even blood smears. Different algorithms can be chained together to discover a new workflow and derive new insights into histopathology. The entire portal was developed using MySQL, PHP, AngularJS, jQuery, Bootstrap 3, CSS3, AJAX, Adobe Photoshop, and HTML.",
-        images:[]
+        images:["images/screenshots/histocalc1.jpg","images/screenshots/histocalc2.jpg"]
     },{
         text: "Putt Putt",
         description: "A small webapp built as part of Dust for a client who wanted a portal to find golf courses on a map. Built the entire app using Google Maps, jQuery, Bootstrap, Silex, AJAX, MySQL, and deployed on Heroku.",
