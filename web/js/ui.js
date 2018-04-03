@@ -23,6 +23,7 @@ function messageBox(title,content,sizeFlag){
 				$(modalHeader).append(close);
 				var h4=document.createElement("h4");
 				$(h4).addClass("modal-title");
+				$(h4).css("color","#333333");
 				$(h4).html(title);
 				$(modalHeader).append(h4);
 			var modalBody=document.createElement("div");
