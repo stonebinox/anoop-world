@@ -61,7 +61,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "HemoCalc (previously Haemocalc)",
         description: "A hemotology tool for pathologists to view analysis results of blood such RBCs, WBCs, and platelets among other types of cells. Medical slides of blood smears are used by Spectral Insights' proprietary acquisition module which involves a microscope attached to a camera and spectrometer and images of the slide are acquired. HaemoCalc analyses these images, performs classification on the different kinds of cells captured and provides details information on every single cell detected. It also allows pathologists to identify diseases and disorders based on the distribution of WBCs and RBCs in a given blood smear based on normal human blood standards. The entire front-end and analysis modules were developed for both local data viewing as well as to view data on a cloud set up. Languages used: Python, PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, ChartJS, ThreeJS, PaperJS, and OpenSeadragon.",
-        images:[]
+        images:["images/hemocalc.jpg","images/hemocalc2.jpg","images/hemocalc3.jpg"]
     },{
         text: "Spectral Insights Website",
         description: "Developed, designed, and hosted the company website. The entire website is internally sourced through Spectral Dashboard where the team has access to the website's contents and can change images, textual data, etc. from the dashboard. Languages used: PHP, MySQL, AJAX, CSS, jQuery, Javascript, HTML, and Adobe Photoshop.",
