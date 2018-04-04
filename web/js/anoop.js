@@ -137,7 +137,12 @@ app.controller("home",function($scope,$http,$compile){
         text: "Dust Architecture",
         description: "I developed Dust's entire web platform. The previous version had few issues and we decided to revamp everything. From data migration from MongoDB to MySQL and RoR to PHP Silex to developing the database and the entire UI with its API calls, I built it. Also integrated Sendgrid's emailing API for Dust Broadcast lists along with Stripe's payment API. I built this using Heroku, ClearDB MySQL, Sendgrid, Stripe, Silex, AngularJS, Bootstrap, and AWS S3 for file storage.",
         images: ["images/screenshots/dust1.png","images/screenshots/dust2.png"]
-    },"And data scraping ... a LOT of it!"];
+    },"And data scraping ... a LOT of it!",
+    {
+        text: "I also filed for a patent in the US and in India.",
+        description: "A lot has changed over the years but this was one of the initial filing.",
+        url: "http://www.patentsencyclopedia.com/app/20140059117"
+    }];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
@@ -154,6 +159,10 @@ app.controller("home",function($scope,$http,$compile){
                     case 8:
                     $("ul.nav").find("li").removeClass("active");
                     $("#projects").parent().addClass("active");
+                    break;
+                    case 37:
+                    $("ul.nav").find("li").removeClass("active");
+                    $("#patents").parent().addClass("active");
                     break;
                 }
                 var text=$scope.messages[$scope.position];
