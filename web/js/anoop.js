@@ -139,8 +139,8 @@ app.controller("home",function($scope,$http,$compile){
         images: ["images/screenshots/dust1.png","images/screenshots/dust2.png"]
     },"And data scraping ... a LOT of it!",
     {
-        text: "I also filed for a patent in the US and in India.",
-        description: "A lot has changed over the years but this was one of the initial filing.",
+        text: "SERVICE PROVIDER FACILITATING ACCESS OF DIVERSE WEB-BASED SERVICES",
+        description: "Long and fancy name for a patent, but I filed it in India and the US. A lot has changed over the years but this was the initial filing.",
         url: "http://www.patentsencyclopedia.com/app/20140059117"
     }];
     $scope.position=null;
