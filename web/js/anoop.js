@@ -174,7 +174,7 @@ app.controller("home",function($scope,$http,$compile){
     "Please feel free to reach out to me about anything you like. I'm open to new opportunities, jobs, and freelance work.",
     {
         text: "Here's all the info you need to get in touch with me:",
-        description: '<ul class="list-group"><li class="list-group-item"><a href="javascript:void(0)"><strong>Email</strong> anoop.santhanam@gmail.com</a></li><li class="list-group-item"><a href="javascript:void(0)"><strong>Skype</strong> anoop.santhanam</a></li><li class="list-group-item active"><a href="https://www.linkedin.com/in/anoop-santhanam-742a6256/"><strong>LinkedIn</strong> https://www.linkedin.com/in/anoop-santhanam-742a6256/</a></li><li class="list-group-item active"><a href="https://github.com/stonebinox/"><strong>Github</strong> https://github.com/stonebinox/</a></li><li class="list-group-item active"><a href="https://www.visualcv.com/hsnd_0f7xdw"><strong>Formal CV</strong> https://www.visualcv.com/hsnd_0f7xdw</a></li></ul>'
+        description: '<ul class="list-group"><li class="list-group-item"><strong>Email</strong> anoop.santhanam@gmail.com</li><li class="list-group-item">Skype</strong> anoop.santhanam</li><li class="list-group-item"><a href="https://www.linkedin.com/in/anoop-santhanam-742a6256/"><strong>LinkedIn</strong> https://www.linkedin.com/in/anoop-santhanam-742a6256/</a></li><li class="list-group-item"><a href="https://github.com/stonebinox/"><strong>Github</strong> https://github.com/stonebinox/</a></li><li class="list-group-item"><a href="https://www.visualcv.com/hsnd_0f7xdw"><strong>Formal CV</strong> https://www.visualcv.com/hsnd_0f7xdw</a></li></ul>'
     }
     ];
     $scope.position=null;
