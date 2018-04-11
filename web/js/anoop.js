@@ -311,7 +311,7 @@ app.controller("home",function($scope,$http,$compile){
                 var result=$scope.results[i];
                 var message=$scope.messages[result];
                 if(typeof message=="string"){
-                    output+='<div class="well">'+message+'</div>';
+                    output+='<div class="well dark">'+message+'</div>';
                 }
             }
             $("#content").html(output);

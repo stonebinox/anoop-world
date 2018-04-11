@@ -6,6 +6,9 @@ body{
     background:#111111 url(../images/dark_wall.png);
     color:#efefef;
 }
+.dark{
+  color:#333333;
+}
 h1{
     font-family: Narrow, Arial, Helvetica, sans-serif;
     letter-spacing:1px;
