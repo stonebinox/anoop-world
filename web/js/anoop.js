@@ -142,7 +142,7 @@ app.controller("home",function($scope,$http,$compile){
         text: "SERVICE PROVIDER FACILITATING ACCESS OF DIVERSE WEB-BASED SERVICES",
         description: "Long and fancy name for a patent, but I filed it in India and the US. A lot has changed over the years but this was the initial filing.",
         url: "http://www.patentsencyclopedia.com/app/20140059117"
-    },"Running my own startup got me some media exposure at a national level.","Here's all of that for me to unnecessarily bask in my past glory.",{
+    },"Running my own startup got me some media exposure at a national level.","Here's all of that for me to unnecessarily bask in my past glory!",{
         text: "City Boys Create Networking Site With A Dislike Button",
         description: "Bangalore Mirror - The guy on the extreme left is me!",
         url: "http://bangaloremirror.indiatimes.com/bangalore/others/City-boys-create-networking-site-with-a-dislike-button/articleshow/21322680.cms",
@@ -156,6 +156,25 @@ app.controller("home",function($scope,$http,$compile){
         descripition: "Yourstory",
         url: "https://yourstory.com/2013/12/binox/",
         images: ["https://images.yourstory.com/2013/12/WP_20131115_003.jpg?auto=compress"]
+    },{
+        text: "Interact",
+        description: "Ignire Magazine (Pages 59-62)",
+        url: "https://issuu.com/ignire/docs/september_-_patterns"
+    },{
+        text: "Endurance 2015 (in Kannada)",
+        description: "Vijay Karnataka - Also written in the local state language, Kannada. This article was about the startup press conference we organized.",
+        url: "http://www.vijaykarnatakaepaper.com/Details.aspx?id=19737&boxid=31845328"
+    },{
+        text: "The dare deliverer!",
+        description: "Deccan Chronicle",
+        url: "http://www.deccanchronicle.com/lifestyle/viral-and-trending/141116/the-dare-deliverer.html",
+        images: ["https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-pvr6njh1114mpe50nv4h7kt9v5-20161113234848.Medi.jpeg"]
+    }, 
+    "And that's it! Hopefully, I've made some kind of impression on you.",
+    "Please feel free to reach out to me about anything you like. I'm open to new opportunities, jobs, and freelance work.",
+    {
+        text: "Here's all the info you need to get in touch with me:",
+        description: '<ul class="list-group"><li><a href="javascript:void(0)"><strong>Phone</strong> +91 7349700666</li></ul>'
     }
     ];
     $scope.position=null;
@@ -178,6 +197,14 @@ app.controller("home",function($scope,$http,$compile){
                     case 37:
                     $("ul.nav").find("li").removeClass("active");
                     $("#patents").parent().addClass("active");
+                    break;
+                    case 39:
+                    $("ul.nav").find("li").removeClass("active");
+                    $("#media").parent().addClass("active");
+                    break;
+                    case 48:
+                    $("ul.nav").find("li").removeClass("active");
+                    $("#contact").parent().addClass("active");
                     break;
                 }
                 var text=$scope.messages[$scope.position];
