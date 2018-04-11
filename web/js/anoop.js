@@ -287,7 +287,11 @@ app.controller("home",function($scope,$http,$compile){
     $scope.searchMe=function(){
         if(validate($scope.search)){
             $scope.clearScreen();
-            $("#maintext").html('Results for '+$scope.search);
+            $("#maintext").html('Results for <span style="color:#ffa500;">'+$scope.search+'</span>');
+            for(var i=0;i<$scope.messages.length;i++){
+                var message=$scope.messages[i];
+                console.log(typeof message);
+            }
         }
         else{
             $scope.position=0;
