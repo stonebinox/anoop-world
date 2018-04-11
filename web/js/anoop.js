@@ -144,9 +144,18 @@ app.controller("home",function($scope,$http,$compile){
         url: "http://www.patentsencyclopedia.com/app/20140059117"
     },"Running my own startup got me some media exposure at a national level.","Here's all of that for me to unnecessarily bask in my past glory.",{
         text: "City Boys Create Networking Site With A Dislike Button",
-        description: "Bangalore Mirror",
+        description: "Bangalore Mirror - The guy on the extreme left is me!",
         url: "http://bangaloremirror.indiatimes.com/bangalore/others/City-boys-create-networking-site-with-a-dislike-button/articleshow/21322680.cms",
         images: ["https://static.toiimg.com/thumb/imgsize-10963,msid-21322682,width-400,resizemode-4/21322682.jpg"]
+    },{
+        text: "Website by students (in Kannada)",
+        description: "Prajavani - This was written in our local state language, Kannada. Google's translation of the same ends up being hilarious.",
+        url: "http://www.prajavani.net/news/article/2012/10/10/121219.html"
+    },{
+        text: "Three CS grads hope to create a hub for everything you do on the Internet. They call it Binox.",
+        descripition: "Yourstory",
+        url: "https://yourstory.com/2013/12/binox/",
+        images: ["https://images.yourstory.com/2013/12/WP_20131115_003.jpg?auto=compress"]
     }
     ];
     $scope.position=null;
