@@ -287,6 +287,7 @@ app.controller("home",function($scope,$http,$compile){
     $scope.searchMe=function(){
         if(validate($scope.search)){
             $scope.clearScreen();
+            $scope.results.length=0;
             $("#maintext").html('Results for <span style="color:#ffa500;">'+$scope.search+'</span>');
             for(var i=0;i<$scope.messages.length;i++){
                 var message=$scope.messages[i];
@@ -305,11 +306,15 @@ app.controller("home",function($scope,$http,$compile){
     };  
     $scope.displayResults=function(){
         if($scope.results.length>0){
+            var output='';
             for(var i=0;i<$scope.results.length;i++){
                 var result=$scope.results[i];
                 var message=$scope.messages[result];
-                console.log(message);
+                if(typeof message=="string"){
+                    output+='<div class="well">'+message+'</div>';
+                }
             }
+            $("#content").html(output);
         }
     };
 });
