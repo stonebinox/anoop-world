@@ -153,7 +153,7 @@ app.controller("home",function($scope,$http,$compile){
         url: "http://www.prajavani.net/news/article/2012/10/10/121219.html"
     },{
         text: "Three CS grads hope to create a hub for everything you do on the Internet. They call it Binox.",
-        descripition: "Yourstory",
+        description: "Yourstory",
         url: "https://yourstory.com/2013/12/binox/",
         images: ["https://images.yourstory.com/2013/12/WP_20131115_003.jpg?auto=compress"]
     },{
