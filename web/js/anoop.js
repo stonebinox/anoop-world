@@ -14,7 +14,7 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "And this is a summary of my work experience!",
         images: ["images/freelancer.jpg","images/binox.png","images/spectral_logo.png","images/dust-logo.png"]
-    },"Now, for the fun part ...","Let's go through every single project I've built from the start of time, shall we?","Yeah, you don't really have a choice. I'll make sure it's fun though!",{
+    },"Now, for the fun part ...","Let's go through every single project I've built from the start of time.","Yeah, you don't have a choice.",{
         text: "Binox Web Services",
         description: "To facilitate development of projects outsourced to us, we launched Binox Web Services to not only design and develop solutions, but to maintain web servers, design graphics content, and host the web content onto the internet. While I did all of the coding, I occasionally also designed logos and icons using Adobe Photoshop.</p><p>This project was my very first and is broken at several points. I've retained it so you can see where I began and how far I've come.",
         images:["images/screenshots/binoxservice.png"]
@@ -137,12 +137,15 @@ app.controller("home",function($scope,$http,$compile){
         text: "Dust Architecture",
         description: "I developed Dust's entire web platform. The previous version had few issues and we decided to revamp everything. From data migration from MongoDB to MySQL and RoR to PHP Silex to developing the database and the entire UI with its API calls, I built it. Also integrated Sendgrid's emailing API for Dust Broadcast lists along with Stripe's payment API. I built this using Heroku, ClearDB MySQL, Sendgrid, Stripe, Silex, AngularJS, Bootstrap, and AWS S3 for file storage.",
         images: ["images/screenshots/dust1.png","images/screenshots/dust2.png"]
-    },"And data scraping ... a LOT of it!",
+    },"And data scraping ... a LOT of it!", "Interestingly, I also have a patent in my name!",
     {
         text: "SERVICE PROVIDER FACILITATING ACCESS OF DIVERSE WEB-BASED SERVICES",
         description: "Long and fancy name for a patent, but I filed it in India and the US. A lot has changed over the years but this was the initial filing.",
         url: "http://www.patentsencyclopedia.com/app/20140059117"
-    }];
+    },"Running my own startup got me some media exposure at a national level.","Here's all of that for me to unnecessarily bask in my past glory.",{
+        
+    }
+    ];
     $scope.position=null;
     $scope.displayText=function(){
         if($scope.position!=null){
