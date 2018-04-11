@@ -143,7 +143,10 @@ app.controller("home",function($scope,$http,$compile){
         description: "Long and fancy name for a patent, but I filed it in India and the US. A lot has changed over the years but this was the initial filing.",
         url: "http://www.patentsencyclopedia.com/app/20140059117"
     },"Running my own startup got me some media exposure at a national level.","Here's all of that for me to unnecessarily bask in my past glory.",{
-        
+        text: "City Boys Create Networking Site With A Dislike Button",
+        description: "Bangalore Mirror",
+        url: "http://bangaloremirror.indiatimes.com/bangalore/others/City-boys-create-networking-site-with-a-dislike-button/articleshow/21322680.cms",
+        images: ["https://static.toiimg.com/thumb/imgsize-10963,msid-21322682,width-400,resizemode-4/21322682.jpg"]
     }
     ];
     $scope.position=null;
