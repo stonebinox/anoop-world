@@ -278,4 +278,20 @@ app.controller("home",function($scope,$http,$compile){
         var text='<img src="'+url+'" class="img-responsive" width="100%">';
         messageBox("Preview",text);
     };
+    $scope.clearScreen=function(){
+        $("#click").css("opacity","0.0");
+        $("#maintext").html('');
+        $("#content").html('');
+    };
+    $scope.results=[];
+    $scope.searchMe=function(){
+        if(validate($scope.search)){
+            $scope.clearScreen();
+            $("#maintext").html('Results for '+$scope.search);
+        }
+        else{
+            $scope.position=0;
+            $scope.displayText();
+        }
+    };  
 });
