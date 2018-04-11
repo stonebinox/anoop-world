@@ -167,14 +167,14 @@ app.controller("home",function($scope,$http,$compile){
     },{
         text: "The dare deliverer!",
         description: "Deccan Chronicle",
-        url: "http://www.deccanchronicle.com/lifestyle/viral-and-trending/141116/the-dare-deliverer.html",
+        url: "https://www.deccanchronicle.com/lifestyle/viral-and-trending/141116/the-dare-deliverer.html",
         images: ["https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-pvr6njh1114mpe50nv4h7kt9v5-20161113234848.Medi.jpeg"]
     }, 
     "And that's it! Hopefully, I've made some kind of impression on you.",
     "Please feel free to reach out to me about anything you like. I'm open to new opportunities, jobs, and freelance work.",
     {
         text: "Here's all the info you need to get in touch with me:",
-        description: '<ul class="list-group"><li><a href="javascript:void(0)"><strong>Phone</strong> +91 7349700666</li></ul>'
+        description: '<ul class="list-group"><li class="list-group-item"><a href="javascript:void(0)"><strong>Email</strong> anoop.santhanam@gmail.com</a></li><li class="list-group-item"><a href="javascript:void(0)"><strong>Skype</strong> anoop.santhanam</a></li><li class="list-group-item"><a href="https://www.linkedin.com/in/anoop-santhanam-742a6256/"><strong>LinkedIn</strong> https://www.linkedin.com/in/anoop-santhanam-742a6256/</a></li></ul>'
     }
     ];
     $scope.position=null;
