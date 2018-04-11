@@ -290,12 +290,26 @@ app.controller("home",function($scope,$http,$compile){
             $("#maintext").html('Results for <span style="color:#ffa500;">'+$scope.search+'</span>');
             for(var i=0;i<$scope.messages.length;i++){
                 var message=$scope.messages[i];
-                console.log(typeof message);
+                if(typeof message == "string"){
+                    if(message.indexOf($scope.search)!=-1){
+                        $scope.results.push(i);
+                    }
+                }
             }
+            $scope.displayResults();
         }
         else{
             $scope.position=0;
             $scope.displayText();
         }
     };  
+    $scope.displayResults=function(){
+        if($scope.results.length>0){
+            for(var i=0;i<$scope.results.length;i++){
+                var result=$scope.results[i];
+                var message=$scope.messages[result];
+                console.log(message);
+            }
+        }
+    };
 });
