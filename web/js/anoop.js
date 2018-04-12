@@ -292,7 +292,14 @@ app.controller("home",function($scope,$http,$compile){
             for(var i=0;i<$scope.messages.length;i++){
                 var message=$scope.messages[i];
                 if(typeof message == "string"){
-                    if(message.indexOf($scope.search)!=-1){
+                    if(message.toLowerCase().indexOf($scope.search)!=-1){
+                        $scope.results.push(i);
+                    }
+                }
+                else{
+                    var text=message.text;
+                    var desc=message.description;
+                    if((text.toLowerCase().indexOf($scope.search)!=-1)&&(desc.toLowerCase().indexOf($scope.search)!=-1)){
                         $scope.results.push(i);
                     }
                 }
@@ -313,8 +320,16 @@ app.controller("home",function($scope,$http,$compile){
                 if(typeof message=="string"){
                     output+='<div class="well dark">'+message+'</div>';
                 }
+                else{
+                    var text=message.text;
+                    var desc=message.description;
+                    output+='<div class="panel panel-default"><div class="panel-heading">'+text+'</div><div class="panel-body">'+description+'</div></div>';
+                }
             }
             $("#content").html(output);
+        }
+        else{
+            $("#content").html('<h3 class="text-left">No results found.</h3>');
         }
     };
 });
