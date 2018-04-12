@@ -299,8 +299,8 @@ app.controller("home",function($scope,$http,$compile){
                 else{
                     console.log(message);
                     var text=message.text;
-                    var desc=message.description;
-                    if((text.toLowerCase().indexOf($scope.search)!=-1)&&(desc.toLowerCase().indexOf($scope.search)!=-1)){
+                    //var desc=message.description;
+                    if(text.toLowerCase().indexOf($scope.search)!=-1){
                         $scope.results.push(i);
                     }
                 }
