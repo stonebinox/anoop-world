@@ -326,7 +326,7 @@ app.controller("home",function($scope,$http,$compile){
                 var result=$scope.results[i];
                 var message=$scope.messages[result];
                 if(typeof message=="string"){
-                    output+='<div class="well dark"><div class="row"><div class="col-sm-10">'+message+'</div><div class="col-sm-2 text-right"><button type="button" class="btn btn-primary btn-sm">Open</button></div></div></div>';
+                    output+='<div class="well dark"><div class="row"><div class="col-sm-10">'+message+'</div><div class="col-sm-2 text-right"><button type="button" class="btn btn-primary btn-sm"  ng-click="position='+result+';displayText();">Open</button></div></div></div>';
                 }
                 else{
                     var text=message.text;
@@ -334,10 +334,11 @@ app.controller("home",function($scope,$http,$compile){
                     if(!validate(desc)){
                         desc="No description found.";
                     }
-                    output+='<div class="panel panel-default"><div class="panel-heading bold">'+text+'</div><div class="panel-body dark">'+desc+'</div><div class="panel-footer text-right"><button type="button" class="btn btn-primary btn-sm">Open</button></div></div>';
+                    output+='<div class="panel panel-default"><div class="panel-heading bold">'+text+'</div><div class="panel-body dark">'+desc+'</div><div class="panel-footer text-right"><button type="button" class="btn btn-primary btn-sm"  ng-click="position='+result+';displayText();">Open</button></div></div>';
                 }
             }
             $("#content").html(output);
+            $compile("#content")($scope);
         }
         else{
             $("#content").html('<h3 class="text-left">No results found.</h3>');
