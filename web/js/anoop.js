@@ -299,9 +299,16 @@ app.controller("home",function($scope,$http,$compile){
                 else{
                     console.log(message);
                     var text=message.text;
-                    //var desc=message.description;
+                    var desc=message.description;
                     if(text.toLowerCase().indexOf($scope.search)!=-1){
                         $scope.results.push(i);
+                    }
+                    if(validate(desc)){
+                        if(desc.toLowerCase().indexOf($scope.search)!=-1){
+                            if($scope.results.indexOf(i)==-1){
+                                $scope.results.push(i);
+                            }
+                        }
                     }
                 }
             }
