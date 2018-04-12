@@ -327,7 +327,7 @@ app.controller("home",function($scope,$http,$compile){
                     if(!validate(desc)){
                         desc="No description found.";
                     }
-                    output+='<div class="panel panel-default"><div class="panel-heading">'+text+'</div><div class="panel-body">'+desc+'</div></div>';
+                    output+='<div class="panel panel-default"><div class="panel-heading bold">'+text+'</div><div class="panel-body dark">'+desc+'</div></div>';
                 }
             }
             $("#content").html(output);
